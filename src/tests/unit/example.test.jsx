@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
-import Home from "../../pages/Home";
+// import App from "../../App";
+import Header from "../../components/Header";
 
-describe('example test', async () => {
-  it('expect Home page to be loaded', () => {
-    render(<Home />, { wrapper: BrowserRouter });
+describe('example test', () => {
+  it('expect Header component to be loaded', () => {
+    render(<Header />);
 
-    expect(screen.getByText(/home/i)).toBeInTheDocument();
-
+    const btnLogin = screen.getByText('LOGIN');
+    expect(btnLogin).toBeInTheDocument();
   });
 })

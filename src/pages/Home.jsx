@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import ArtistArt from '../components/ArtistArt';
+import Footer from '../components/Footer';
 import Gallery from '../components/Gallery';
 import Header from '../components/Header';
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      {/* <main>
         <section>
           <h1>Descubra Artista Underground e Artes exclusivas</h1>
           <span>
@@ -100,6 +101,7 @@ export default function Home() {
           </div>
         </span>
       </main>
+      <Footer /> */}
     </>
   );
 }
