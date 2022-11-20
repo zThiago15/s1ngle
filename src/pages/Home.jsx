@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsArrowRight } from 'react-icons/bs';
+import ArtistArt from '../components/ArtistArt';
 import Header from '../components/Header';
 
 export default function Home() {
@@ -33,6 +35,19 @@ export default function Home() {
               <p>Vendas</p>
             </span>
           </div>
+        </section>
+        <section>
+          <div>
+            <strong>Escolha do Editor</strong>
+
+            <button type="button">
+              Escolha do editor
+              <BsArrowRight />
+            </button>
+          </div>
+          <ArtistArt />
+          <ArtistArt />
+          <ArtistArt />
         </section>
       </main>
     </>
