@@ -89,6 +89,16 @@ export default function Home() {
             </li>
           </ol>
         </section>
+        <span>
+          <p>
+            Junte-se a nossa
+            <strong>Comunidade</strong>
+          </p>
+          <div>
+            <input type="email" placeholder="Seu e-mail" />
+            <button type="button">Juntar-se</button>
+          </div>
+        </span>
       </main>
     </>
   );
