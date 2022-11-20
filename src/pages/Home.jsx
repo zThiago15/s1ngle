@@ -61,7 +61,34 @@ export default function Home() {
           <Gallery />
           <Gallery />
         </section>
-
+        <section>
+          <h2>Como ser um criador</h2>
+          <ol>
+            <li>
+              <h3>Passo1</h3>
+              <strong>Crie uma conta</strong>
+              <p>
+                Adicione todos os dado solicitados no cadastro e envie as documentações necessárias
+              </p>
+            </li>
+            <li>
+              <h3>Passo2</h3>
+              <strong>Agurda aprovação</strong>
+              <p>
+                Nossa equipe irá analisar seus dados em até 24 horas, e
+                caso aprovado, receberá instruções por e-mail.
+              </p>
+            </li>
+            <li>
+              <h3>Passo1</h3>
+              <strong>Crie uma conta</strong>
+              <p>
+                Complete seu perfil, cadastre produtos, galerias e colabs e pronto,
+                nós fazemos todo o resto.
+              </p>
+            </li>
+          </ol>
+        </section>
       </main>
     </>
   );
