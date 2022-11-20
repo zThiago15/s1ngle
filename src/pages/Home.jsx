@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 import ArtistArt from '../components/ArtistArt';
+import Gallery from '../components/Gallery';
 import Header from '../components/Header';
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <Header />
       <main>
         <section>
-          <p>Descubra Artista Underground e Artes exclusivas</p>
+          <h1>Descubra Artista Underground e Artes exclusivas</h1>
           <span>
             <img src="" alt="artist name 1" />
             <img src="" alt="artist name 2" />
@@ -38,10 +39,10 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <strong>Escolha do Editor</strong>
+            <h2>Escolha do Editor</h2>
 
             <button type="button">
-              Escolha do editor
+              Ver tudo
               <BsArrowRight />
             </button>
           </div>
@@ -49,6 +50,18 @@ export default function Home() {
           <ArtistArt />
           <ArtistArt />
         </section>
+        <section>
+          <h2>Nossas Galerias</h2>
+
+          <button type="button">
+            Ver tudo
+            <BsArrowRight />
+          </button>
+          <Gallery />
+          <Gallery />
+          <Gallery />
+        </section>
+
       </main>
     </>
   );
