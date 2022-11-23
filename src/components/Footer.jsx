@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   SlSocialFacebook, SlSocialTwitter, SlSocialLinkedin, SlSocialInstagram,
-} from 'react-icons';
+} from 'react-icons/sl';
 import Logo from '../assets/imgs/logo.svg';
 
 export default function Footer() {
