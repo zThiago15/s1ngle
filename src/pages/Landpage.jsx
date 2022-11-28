@@ -175,14 +175,14 @@ export default function Home() {
           </ol>
         </section>
 
-        <span>
-          <p>
+        <span className="bg-black h-[10em] flex items-center justify-evenly my-16">
+          <p className="text-white text-2xl">
             Junte-se a nossa
-            <strong>Comunidade</strong>
+            <strong className="text-white"> Comunidade</strong>
           </p>
           <div>
-            <input type="email" placeholder="Seu e-mail" />
-            <button type="button">Juntar-se</button>
+            <input className="p-2 rounded mr-5" type="email" placeholder="Seu e-mail" />
+            <button type="button" className="text-white border-2 border-white p-2 rounded-3xl">Juntar-se</button>
           </div>
         </span>
       </main>
