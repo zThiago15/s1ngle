@@ -6,13 +6,17 @@ import ArtSea from '../assets/arts/aesthetic-sea.jpg';
 
 export default function ArtistArt() {
   return (
-    <div className="shadow-lg w-[15em] bg-[#F3F3F3] p-5 flex flex-col items-center w-[20em]">
-      <span className="flex items-center">
-        <img src={Artist1} alt="artist" className="rounded-[50%] w-8" />
-        <p>Ray Pamber</p>
-        <MdVerified className="text-[#49D7D7]" />
-        <BiHeart className="text-darkgrey w-5 " />
-      </span>
+    <div className="shadow-lg w-[15em] bg-[#F3F3F3] p-5 flex flex-col items-center w-[25em] rounded">
+
+      <div className="flex justify-between items-center w-[20em] h-[2em] mb-5">
+        <span className="flex items-center justify-evenly w-48">
+          <img src={Artist1} alt="artist" className="rounded-[50%] w-14" />
+          <p><strong>Ray Pamber</strong></p>
+          <MdVerified className="text-[#49D7D7] text-2xl" />
+        </span>
+        <BiHeart className="text-darkgrey text-4xl" />
+      </div>
+
       <img src={ArtSea} alt="art" className="w-48" />
       <span className="mt-3 flex items-center justify-between w-[13em]">
         <p>Aesthetic Sea</p>

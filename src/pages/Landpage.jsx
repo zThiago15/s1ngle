@@ -39,7 +39,7 @@ export default function Home() {
                 </Avatar.Group>
                 <div>
                   <strong className="text-2xl">100+</strong>
-                  <p className="text-lg text-darkgrey">Os melhores artistas</p>
+                  <p className="text-lg text-[#858585]">Os melhores artistas</p>
                 </div>
               </span>
               <BsArrowDown className="text-[50px] mt-5 ml-10" />
@@ -90,17 +90,28 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <h2>Nossas Galerias</h2>
-
-          <button type="button">
-            Ver tudo
-            <BsArrowRight />
-          </button>
-          <Gallery />
-          <Gallery />
-          <Gallery />
+        <section className="mt-24">
+          <div className="w-full bg-[#D9D9D9] h-[150px] flex justify-between items-center p-5 relative -z-10">
+            <span className="flex items-center">
+              <img src={Sparkle} alt="sparkles" className="mr-5 w-8" />
+              <h2 className="text-2xl">
+                Nossas
+                <strong> Galerias</strong>
+              </h2>
+              <img src={Blob} alt="blob" className="relative right-8 bottom-2 -z-[1]" />
+            </span>
+            <button type="button" className="flex items-center w-28 justify-between hover:bg-red-700">
+              Ver tudo
+              <BsArrowRight className="bg-black text-white w-10 h-10 p-2 rounded-[50%]" />
+            </button>
+          </div>
+          <div className="flex justify-evenly relative bottom-5">
+            <Gallery />
+            <Gallery />
+            <Gallery />
+          </div>
         </section>
+
         <section>
           <h2>Como ser um criador</h2>
           <ol>
