@@ -97,7 +97,7 @@ module.exports = {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/.jest/mocks/fileMock.js',
+    '\\.(gif|ttf|eot|svg|png|jpeg|jpg)$': '<rootDir>/.jest/mocks/fileMock.js',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
   },
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
