@@ -17,9 +17,9 @@ import Sparkle from '../assets/imgs/symbols/sparkle.svg';
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header />
-      <main>
+      <main className="overflow-hidden">
         <article>
           <img className="absolute top-0 right-0 w-[30rem] -z-10" src={GridLayout} alt="grid layout" />
           <section className="w-[450px] mt-16 ml-4 w-full flex justify-around">
@@ -186,7 +186,8 @@ export default function Home() {
           </div>
         </span>
       </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
