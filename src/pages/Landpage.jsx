@@ -1,26 +1,27 @@
 import React from 'react';
-import { BsArrowRight, BsArrowDown } from 'react-icons/bs';
+import { BsArrowDown, BsArrowRight } from 'react-icons/bs';
 import { Avatar } from '@nextui-org/react';
 import ArtistArt from '../components/ArtistArt';
 import Footer from '../components/Footer';
 import Gallery from '../components/Gallery';
 import Header from '../components/Header';
-import GridLayout from '../assets/imgs/bg-grid-layout.svg';
-import Blob from '../assets/imgs/blob.svg';
-import Star from '../assets/imgs/symbols/star.svg';
-import Line from '../assets/imgs/symbols/line.svg';
-import Art from '../assets/imgs/art.svg';
 import Artist1 from '../assets/imgs/artist1.jpeg';
 import Artist2 from '../assets/imgs/artist2.jpeg';
 import Artist3 from '../assets/imgs/artist3.jpeg';
+import GridLayout from '../assets/imgs/bg-grid-layout.svg';
+import Star from '../assets/imgs/symbols/star.svg';
+import Line from '../assets/imgs/symbols/line.svg';
+import Art from '../assets/imgs/art.svg';
+import Blob from '../assets/imgs/symbols/blob.svg';
+import Sparkle from '../assets/imgs/symbols/sparkle.svg';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <img className="lg: absolute top-0 right-0 w-[30rem] -z-10" src={GridLayout} alt="grid layout" />
       <main>
         <article>
+          <img className="absolute top-0 right-0 w-[30rem] -z-10" src={GridLayout} alt="grid layout" />
           <section className="w-[450px] mt-16 ml-4 w-full flex justify-around">
             <div>
               <img src={Blob} alt="blob" className="absolute -z-10 w-36 mb-5" />
@@ -68,17 +69,27 @@ export default function Home() {
         </article>
 
         <section className="mt-24">
-          <div className="w-full bg-lightgrey h-[150px]">
-            <h2>Escolha do Editor</h2>
-            <button type="button">
+          <div className="w-full bg-[#D9D9D9] h-[150px] flex justify-between items-center p-5 relative -z-10">
+            <span className="flex items-center">
+              <img src={Sparkle} alt="sparkles" className="mr-5 w-8" />
+              <h2 className="text-2xl">
+                Escolha do
+                <strong> Editor</strong>
+              </h2>
+              <img src={Blob} alt="blob" className="relative right-8 bottom-2 -z-[1]" />
+            </span>
+            <button type="button" className="flex items-center w-28 justify-between hover:bg-red-700">
               Ver tudo
-              <BsArrowRight />
+              <BsArrowRight className="bg-black text-white w-10 h-10 p-2 rounded-[50%]" />
             </button>
           </div>
-          <ArtistArt />
-          <ArtistArt />
-          <ArtistArt />
+          <div className="flex justify-evenly relative bottom-5">
+            <ArtistArt />
+            <ArtistArt />
+            <ArtistArt />
+          </div>
         </section>
+
         <section>
           <h2>Nossas Galerias</h2>
 
