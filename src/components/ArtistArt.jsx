@@ -2,7 +2,7 @@ import React from 'react';
 import { MdVerified } from 'react-icons/md';
 import { BiHeart } from 'react-icons/bi';
 import Artist1 from '../assets/imgs/artist1.jpeg';
-import ArtSea from '../assets/arts/aesthetic-sea.jpg';
+import ArtSea from '../assets/imgs/arts/aesthetic-sea.jpg';
 
 export default function ArtistArt() {
   return (

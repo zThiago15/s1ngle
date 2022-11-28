@@ -113,6 +113,32 @@ export default function Home() {
         </section>
 
         <section>
+          <div className="flex items-center w-[28em] m-auto mt-16">
+            <img src={Sparkle} alt="sparkle" className="w-10 mr-5" />
+            <h2 className="text-3xl">
+              Os melhores
+              <strong> artistas</strong>
+            </h2>
+            <img src={Blob} alt="Blob" className="w-14 relative -z-10 right-4" />
+          </div>
+
+          <span className="flex w-[750px] m-auto">
+            <div className="border-2 border-black w-64 rounded-2xl p-3 m-5">
+              <p className="text-xl">Punk Doddled Apes</p>
+              <small className="text-sm text-darkgrey">20.600+ item</small>
+            </div>
+            <div className="border-2 border-black w-64 rounded-2xl p-3 m-5">
+              <p className="text-xl">Punk Doddled Apes</p>
+              <small className="text-sm text-darkgrey">20.600+ item</small>
+            </div>
+            <div className="border-2 border-black w-64 rounded-2xl p-3 m-5">
+              <p className="text-xl">Punk Doddled Apes</p>
+              <small className="text-sm text-darkgrey">20.600+ item</small>
+            </div>
+          </span>
+        </section>
+
+        <section>
           <h2>Como ser um criador</h2>
           <ol>
             <li>
