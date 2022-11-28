@@ -44,12 +44,8 @@ export default function Home() {
               </span>
               <BsArrowDown className="text-[50px] mt-5 ml-10" />
             </div>
-            <div className="flex flex-col justify-between">
-              <img src={Star} alt="star" className="mr-10" />
-              <img src={Line} alt="line" className="ml-10" />
-            </div>
             <div className="flex mr-56 items-end">
-              <img src={Art} alt="Art" className="w-80" />
+              <img src={Art} alt="Abstract art" className="w-80" />
               <div className="ml-2 flex flex-col">
                 <span>
                   <h2 className="text-white text-lg font-bold">52.1K+</h2>

@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "../../App";
 
 describe('Landpage', () => {
-  it('should render Header section', () => {
+  it('should render header section', () => {
     render(<App />, {wrapper: BrowserRouter});
 
     const btnLogin = screen.getByText(/login/i);
@@ -20,5 +20,12 @@ describe('Landpage', () => {
   it('should render home section', () => {
     render(<App />, {wrapper: BrowserRouter});
 
-  })
+    expect(screen.getByText(/artistas underground/i)).toBeInTheDocument();
+    expect(screen.getByText(/artes exclusivas/i)).toBeInTheDocument();
+    expect(screen.getByText(/os melhores artistas/i)).toBeInTheDocument();
+
+
+    expect(screen.getByAltText(/Abstract art/i)).toBeInTheDocument();
+  });
+
 })
