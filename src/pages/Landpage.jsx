@@ -139,33 +139,42 @@ export default function Home() {
         </section>
 
         <section>
-          <h2>Como ser um criador</h2>
-          <ol>
-            <li>
-              <h3>Passo1</h3>
+          <div className="flex items-center w-[28em] m-auto mt-16">
+            <img src={Sparkle} alt="sparkle" className="w-10 mr-5" />
+            <h2 className="text-3xl">
+              Como ser um
+              <strong> Criador</strong>
+            </h2>
+            <img src={Blob} alt="Blob" className="w-14 relative -z-10 right-4" />
+          </div>
+
+          <ol className="flex justify-between my-5">
+            <li className="w-[30%] bg-gray-50 h-[224px] flex flex-col justify-between text-center">
+              <h3 className="text-xl">Passo 1</h3>
               <strong>Crie uma conta</strong>
-              <p>
+              <p className="text-darkgrey">
                 Adicione todos os dado solicitados no cadastro e envie as documentações necessárias
               </p>
             </li>
-            <li>
-              <h3>Passo2</h3>
-              <strong>Agurda aprovação</strong>
-              <p>
-                Nossa equipe irá analisar seus dados em até 24 horas, e
-                caso aprovado, receberá instruções por e-mail.
+            <li className="w-[30%] bg-gray-50 h-[224px] flex flex-col justify-between text-center">
+              <h3 className="text-xl">Passo 2</h3>
+              <strong>Aguarde aprovação</strong>
+              <p className="text-darkgrey">
+                Nossa equipe irá analisar seus dados em até 24 horas, e caso aprovado,
+                receberá instruções por e-mail.
               </p>
             </li>
-            <li>
-              <h3>Passo1</h3>
-              <strong>Crie uma conta</strong>
-              <p>
-                Complete seu perfil, cadastre produtos, galerias e colabs e pronto,
-                nós fazemos todo o resto.
+            <li className="w-[30%] bg-gray-50 h-[224px] flex flex-col justify-between text-center">
+              <h3 className="text-xl">Passo 3</h3>
+              <strong>Publique e venda seu trabalho!</strong>
+              <p className="text-darkgrey">
+                Complete seu perfil, cadastre produtos, galerias
+                e colabs e pronto, nós fazemos todo o resto.
               </p>
             </li>
           </ol>
         </section>
+
         <span>
           <p>
             Junte-se a nossa
