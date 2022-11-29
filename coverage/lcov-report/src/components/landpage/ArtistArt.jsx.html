@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/Header.jsx</title>
+    <title>Code coverage report for src/components/landpage/ArtistArt.jsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> Header.jsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/landpage</a> ArtistArt.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>27/27</span>
             </div>
         
             
@@ -82,42 +82,66 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { SlMagnifier } from 'react-icons/sl';
-import Logo from '../assets/imgs/logo.svg';
+import { MdVerified } from 'react-icons/md';
+import { BiHeart } from 'react-icons/bi';
+import Artist1 from '../../assets/imgs/artist1.jpeg';
+import ArtSea from '../../assets/imgs/arts/aesthetic-sea.jpg';
 &nbsp;
-export default function Header() {
+export default function ArtistArt() {
   return (
-    &lt;nav className="flex justify-between m-2"&gt;
-      &lt;img className="w-52" src={Logo} alt="Logo s1ngle" /&gt;
-      &lt;span className="lg: flex items-center bg-lightgrey p-2 w-96 h-10"&gt;
-        &lt;SlMagnifier /&gt;
-        &lt;input className="text-darkgrey bg-transparent ml-2" placeholder="Escreva aqui..." /&gt;
-      &lt;/span&gt;
-      &lt;div className="mt-5"&gt;
-        &lt;button className="text-white bg-black text-xl mr-8" type="button"&gt;Login&lt;/button&gt;
-        &lt;button className="text-white p-2 border-white border-2 rounded-3xl text-xl" type="button"&gt;Cadastrar-se&lt;/button&gt;
+    &lt;div className="shadow-lg w-[15em] bg-[#F3F3F3] p-5 flex flex-col items-center w-[25em] rounded"&gt;
+&nbsp;
+      &lt;div className="flex justify-between items-center w-[20em] h-[2em] mb-5"&gt;
+        &lt;span className="flex items-center justify-evenly w-48"&gt;
+          &lt;img src={Artist1} alt="artist" className="rounded-[50%] w-14" /&gt;
+          &lt;p&gt;&lt;strong&gt;Ray Pamber&lt;/strong&gt;&lt;/p&gt;
+          &lt;MdVerified className="text-[#49D7D7] text-2xl" /&gt;
+        &lt;/span&gt;
+        &lt;BiHeart className="text-darkgrey text-4xl" /&gt;
       &lt;/div&gt;
-    &lt;/nav&gt;
+&nbsp;
+      &lt;img src={ArtSea} alt="art" className="w-48" /&gt;
+      &lt;span className="mt-3 flex items-center justify-between w-[13em]"&gt;
+        &lt;p&gt;Aesthetic Sea&lt;/p&gt;
+        &lt;button type="button" className="bg-black text-white p-2 rounded"&gt;Comprar&lt;/button&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
   );
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -127,16 +151,16 @@ export default function Header() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-11-28T21:57:09.932Z
+                at 2022-11-29T17:41:33.806Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     

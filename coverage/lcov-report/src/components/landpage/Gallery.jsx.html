@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/ArtistArt.jsx</title>
+    <title>Code coverage report for src/components/landpage/Gallery.jsx</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> ArtistArt.jsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/landpage</a> Gallery.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>27/27</span>
+                <span class='fraction'>33/33</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>27/27</span>
+                <span class='fraction'>33/33</span>
             </div>
         
             
@@ -90,13 +90,25 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">9x</span>
@@ -118,16 +130,15 @@
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { MdVerified } from 'react-icons/md';
 import { BiHeart } from 'react-icons/bi';
-import Artist1 from '../assets/imgs/artist1.jpeg';
-import ArtSea from '../assets/imgs/arts/aesthetic-sea.jpg';
+import { MdVerified } from 'react-icons/md';
+import Artist1 from '../../assets/imgs/artist1.jpeg';
+import ArtSea from '../../assets/imgs/arts/aesthetic-sea.jpg';
 &nbsp;
-export default function ArtistArt() {
+export default function Gallery() {
   return (
-    &lt;div className="shadow-lg w-[15em] bg-[#F3F3F3] p-5 flex flex-col items-center w-[25em] rounded"&gt;
-&nbsp;
-      &lt;div className="flex justify-between items-center w-[20em] h-[2em] mb-5"&gt;
+    &lt;div className="shadow-lg bg-[#F3F3F3] p-8 flex flex-col items-center w-[25em] rounded"&gt;
+      &lt;div className="flex justify-between items-center w-[20em] h-[2em] mb-3"&gt;
         &lt;span className="flex items-center justify-evenly w-48"&gt;
           &lt;img src={Artist1} alt="artist" className="rounded-[50%] w-14" /&gt;
           &lt;p&gt;&lt;strong&gt;Ray Pamber&lt;/strong&gt;&lt;/p&gt;
@@ -136,10 +147,17 @@ export default function ArtistArt() {
         &lt;BiHeart className="text-darkgrey text-4xl" /&gt;
       &lt;/div&gt;
 &nbsp;
-      &lt;img src={ArtSea} alt="art" className="w-48" /&gt;
-      &lt;span className="mt-3 flex items-center justify-between w-[13em]"&gt;
-        &lt;p&gt;Aesthetic Sea&lt;/p&gt;
-        &lt;button type="button" className="bg-black text-white p-2 rounded"&gt;Comprar&lt;/button&gt;
+      &lt;span className="flex justify-evenly"&gt;
+        &lt;img src={ArtSea} alt="artist" className="p-5 w-[350px]" /&gt;
+        &lt;div className="flex flex-col justify-evenly  h-[450px]"&gt;
+          &lt;img src={ArtSea} alt="artist" className="" /&gt;
+          &lt;img src={ArtSea} alt="artist" className="" /&gt;
+          &lt;img src={ArtSea} alt="artist" className="" /&gt;
+        &lt;/div&gt;
+      &lt;/span&gt;
+      &lt;span className="flex justify-between items-center mt-5 w-[20em]"&gt;
+        &lt;p&gt;Nome Galeria&lt;/p&gt;
+        &lt;button className="bg-black p-3 text-white rounded" type="button"&gt;Ver tudo&lt;/button&gt;
       &lt;/span&gt;
     &lt;/div&gt;
   );
@@ -151,16 +169,16 @@ export default function ArtistArt() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-11-28T21:57:09.932Z
+                at 2022-11-29T17:41:33.806Z
             </div>
-        <script src="../../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../../sorter.js"></script>
-        <script src="../../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     

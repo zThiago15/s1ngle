@@ -1,16 +1,14 @@
 import React from 'react';
 import { BsArrowDown, BsArrowRight } from 'react-icons/bs';
 import { Avatar } from '@nextui-org/react';
-import ArtistArt from '../components/ArtistArt';
-import Footer from '../components/Footer';
-import Gallery from '../components/Gallery';
-import Header from '../components/Header';
+import ArtistArt from '../components/landpage/ArtistArt';
+import Footer from '../components/landpage/Footer';
+import Gallery from '../components/landpage/Gallery';
+import Header from '../components/landpage/Header';
 import Artist1 from '../assets/imgs/artist1.jpeg';
 import Artist2 from '../assets/imgs/artist2.jpeg';
 import Artist3 from '../assets/imgs/artist3.jpeg';
 import GridLayout from '../assets/imgs/bg-grid-layout.svg';
-import Star from '../assets/imgs/symbols/star.svg';
-import Line from '../assets/imgs/symbols/line.svg';
 import Art from '../assets/imgs/art.svg';
 import Blob from '../assets/imgs/symbols/blob.svg';
 import Sparkle from '../assets/imgs/symbols/sparkle.svg';
@@ -144,15 +142,15 @@ export default function Home() {
             <img src={Blob} alt="Blob" className="w-14 relative -z-10 right-4" />
           </div>
 
-          <ol className="flex justify-between my-5">
-            <li className="w-[30%] bg-gray-50 h-[224px] flex flex-col justify-between text-center">
-              <h3 className="text-xl">Passo 1</h3>
+          <ol className="flex justify-between m-8">
+            <li className="w-[30%] bg-[#E0E0E0] h-[15em] flex flex-col justify-between text-center">
+              <h3 className="text-xl mt-2">Passo 1</h3>
               <strong>Crie uma conta</strong>
               <p className="text-darkgrey">
                 Adicione todos os dado solicitados no cadastro e envie as documentações necessárias
               </p>
             </li>
-            <li className="w-[30%] bg-gray-50 h-[224px] flex flex-col justify-between text-center">
+            <li className="w-[30%] bg-[#E0E0E0] h-[15em] flex flex-col justify-between text-center">
               <h3 className="text-xl">Passo 2</h3>
               <strong>Aguarde aprovação</strong>
               <p className="text-darkgrey">
@@ -160,7 +158,7 @@ export default function Home() {
                 receberá instruções por e-mail.
               </p>
             </li>
-            <li className="w-[30%] bg-gray-50 h-[224px] flex flex-col justify-between text-center">
+            <li className="w-[30%] bg-[#E0E0E0] h-[15em] flex flex-col justify-between text-center">
               <h3 className="text-xl">Passo 3</h3>
               <strong>Publique e venda seu trabalho!</strong>
               <p className="text-darkgrey">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SlMagnifier } from 'react-icons/sl';
-import Logo from '../assets/imgs/logo.svg';
+import Logo from '../../assets/imgs/logo.svg';
 
 export default function Header() {
   return (
