@@ -1,8 +1,11 @@
 import React from 'react';
 import { SlMagnifier } from 'react-icons/sl';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/imgs/logo.svg';
 
 export default function Header() {
+  const navigate = useNavigate();
+
   return (
     <nav className="flex justify-between m-2">
       <img className="w-52" src={Logo} alt="Logo s1ngle" />
@@ -12,7 +15,13 @@ export default function Header() {
       </span>
       <div className="mt-5">
         <button className="text-white bg-black text-xl mr-8" type="button">Login</button>
-        <button className="text-white p-2 border-white border-2 rounded-3xl text-xl" type="button">Cadastrar-se</button>
+        <button
+          className="text-white p-2 border-white border-2 rounded-3xl text-xl"
+          type="button"
+          onClick={() => navigate('/signup-artist')}
+        >
+          Cadastrar-se
+        </button>
       </div>
     </nav>
   );
