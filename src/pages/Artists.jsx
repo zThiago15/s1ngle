@@ -31,7 +31,7 @@ export default function Artists() {
 
   return (
     <div>
-      <Header />
+      <Header namePage="Artistas" />
     </div>
   );
 }
