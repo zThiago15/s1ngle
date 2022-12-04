@@ -9,12 +9,12 @@ export default function Header(props) {
 
   return (
     <header className="bg-black text-white flex justify-between items-center h-[3.5em] p-5">
-      <span className="flex">
+      <span className="flex items-center">
         <GiHamburgerMenu />
-        <p className="uppercase ml-5">{namePage}</p>
+        <h1 className="ml-8 text-lg">{namePage}</h1>
       </span>
 
-      <span className="flex">
+      <span className="flex items-center">
         <SlMagnifier />
         <BsThreeDotsVertical className="ml-5" />
       </span>
