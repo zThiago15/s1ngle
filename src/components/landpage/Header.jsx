@@ -14,7 +14,13 @@ export default function Header() {
         <input className="text-darkgrey bg-transparent ml-2" placeholder="Escreva aqui..." />
       </span>
       <div className="mt-5">
-        <button className="text-white bg-black text-xl mr-8" type="button">Login</button>
+        <button
+          className="text-white bg-black text-xl mr-8"
+          type="button"
+          onClick={() => navigate('/login')}
+        >
+          Login
+        </button>
         <button
           className="text-white p-2 border-white border-2 rounded-3xl text-xl"
           type="button"

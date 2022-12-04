@@ -13,7 +13,7 @@ import Art from '../assets/imgs/art.svg';
 import Blob from '../assets/imgs/symbols/blob.svg';
 import Sparkle from '../assets/imgs/symbols/sparkle.svg';
 
-export default function Home() {
+export default function Landpage() {
   return (
     <div>
       <Header />
