@@ -1,8 +1,8 @@
 [x] - Criar navBar(usuário logado)
 [x] - Criar navBar(usuário deslogado)
 
-[] - Criar pág de artistas
-  [] - Header - hamburguer menu(abre navBar), Artistas
+[x] - Criar pág de artistas
+  [x] - Header - hamburguer menu(abre navBar), Artistas
   [] Body - renderizar imagem, nome e especialidade do artistas
     [] - Ao clicar na imagem, será redirecionado pro perfil do artista
 
