@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import Header from '../components/home/Header';
 import artistImg from '../assets/imgs/artist1.jpeg';
 import sea from '../assets/imgs/arts/aesthetic-sea.jpg';
+import NavBar from '../components/home/NavBar';
+import { selectShowNavbar } from '../redux/slices/sliceNavBar';
 
 export default function ProfileArtist() {
   const [artist, setArtist] = useState({});
   const [arts, setArts] = useState([]);
+
+  const { showNavBar } = useSelector(selectShowNavbar);
 
   useEffect(() => {
     const getArtistData = async () => {
@@ -46,6 +51,9 @@ export default function ProfileArtist() {
   return (
     <main className="bg-black h-[100vh]">
       <Header namePage="Perfil" />
+      <span className={showNavBar ? 'absolute' : 'hidden'}>
+        <NavBar />
+      </span>
       <div className="flex items-center text-white m-5 w-[5em]">
         <img src={img} alt="artist" className="rounded-full mr-3" />
         <span>

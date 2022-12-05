@@ -1,20 +1,29 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import Logo from '../../assets/imgs/logo.svg';
+import { changeStateNavbar } from '../../redux/slices/sliceNavBar';
 
 export default function NavBar() {
-  const navigate = useNavigate();
   const [userLogged] = useState(true);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const disableNavBarAndNavigate = (routeName) => {
+    dispatch(changeStateNavbar(false));
+    navigate(`/${routeName}`);
+  };
 
   return (
     <nav className="bg-black text-white w-[120%] h-[100vh]">
       <img src={Logo} alt="logo s1ngle" className="w-[13em] p-2" />
       { userLogged && (
         <main className="flex flex-col justify-evenly items-start h-[10em] m-5 mb-[5em]">
-          <button type="button" onClick={() => navigate('/home')}>HOME</button>
-          <button type="button" onClick={() => navigate('/artists')}>ARTISTAS</button>
-          <button type="button" onClick={() => navigate('/stores')}>LOJAS</button>
-          <button type="button" onClick={() => navigate('/customize')}>PERSONALIZAR</button>
+          <button type="button" onClick={() => disableNavBarAndNavigate('home')}>HOME</button>
+          <button type="button" onClick={() => disableNavBarAndNavigate('artists')}>ARTISTAS</button>
+          <button type="button" onClick={() => disableNavBarAndNavigate('products')}>PRODUTOS</button>
+          <button type="button" onClick={() => disableNavBarAndNavigate('customize')}>PERSONALIZAR</button>
         </main>
       )}
       {
