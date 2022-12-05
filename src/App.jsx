@@ -5,6 +5,7 @@ import Artists from './pages/Artists';
 import Home from './pages/Home';
 import Landpage from './pages/Landpage';
 import Login from './pages/Login';
+import Products from './pages/Products';
 import ProfileArtist from './pages/ProfileArtist';
 import SignupArtist from './pages/SignupArtist';
 
@@ -15,6 +16,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/home" element={<Home />} />
       <Route path="/artists" element={<Artists />} />
+      <Route path="/products" element={<Products />} />
       <Route path="/artists/profile/:id" element={<ProfileArtist />} />
 
       <Route path="/" element={<Landpage />} />

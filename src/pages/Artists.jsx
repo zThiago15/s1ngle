@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import artist1 from '../assets/imgs/artist1.jpeg';
 import Header from '../components/home/Header';
 import NavBar from '../components/home/NavBar';
-import { selectShowNavbar } from '../redux/slices/sliceNavBar';
 
 export default function Artists() {
   const [artists, setArtists] = useState([]);
-  const { showNavBar } = useSelector(selectShowNavbar);
 
   useEffect(() => {
     const getArtists = async () => {
@@ -51,7 +48,7 @@ export default function Artists() {
 
   return (
     <div>
-      <span className={showNavBar ? 'absolute' : 'hidden'}>
+      <span>
         <NavBar />
       </span>
       <Header namePage="Artistas" />
