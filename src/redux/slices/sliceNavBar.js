@@ -14,6 +14,6 @@ const slice = createSlice({
 
 export const { changeStateNavbar } = slice.actions;
 
-export const selectShowNavbar = (state) => state.showNavBar;
+export const selectShowNavbar = (state) => state.navbar;
 
 export default slice.reducer;
