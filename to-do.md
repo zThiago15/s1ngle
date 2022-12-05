@@ -18,3 +18,4 @@ Redux Toolkit
 
 Conexão a API
 [] - Usar axios para consumir API que recupera os produtos de artistas
+  [] - Quando o usuário fazer login, conectar a API '/login' do back-end e retornar token do usuário
