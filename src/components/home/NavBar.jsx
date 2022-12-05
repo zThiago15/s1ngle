@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Logo from '../../assets/imgs/logo.svg';
-import { changeStateNavbar } from '../../redux/slices/sliceNavBar';
+import { changeStateNavbar, selectShowNavbar } from '../../redux/slices/sliceNavBar';
 
 export default function NavBar() {
   const [userLogged] = useState(true);
@@ -10,13 +10,15 @@ export default function NavBar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  const { showNavBar } = useSelector(selectShowNavbar);
+
   const disableNavBarAndNavigate = (routeName) => {
     dispatch(changeStateNavbar(false));
     navigate(`/${routeName}`);
   };
 
   return (
-    <nav className="bg-black text-white w-[120%] h-[100vh]">
+    <nav className={`bg-black text-white w-[80%] h-[100vh] ${showNavBar ? 'absolute' : 'hidden'}`}>
       <img src={Logo} alt="logo s1ngle" className="w-[13em] p-2" />
       { userLogged && (
         <main className="flex flex-col justify-evenly items-start h-[10em] m-5 mb-[5em]">

@@ -7,6 +7,7 @@
     [x] - Ao clicar na imagem, será redirecionado pro perfil do artista
   [x] - Estilizar 
 
+[] - Criar pág home
 [] - Criar pág de produtos
 [x] - Criar pág de perfil do artista
 [] - Criar pág de personalizar(futuro)
