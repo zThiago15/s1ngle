@@ -5,12 +5,12 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 import PropTypes from 'prop-types';
 
 export default function Header(props) {
-  const { namePage } = props;
+  const { namePage, setShowNavBar } = props;
 
   return (
     <header className="bg-black text-white flex justify-between items-center h-[3.5em] p-5">
       <span className="flex items-center">
-        <GiHamburgerMenu />
+        <GiHamburgerMenu onClick={() => setShowNavBar(true)} />
         <h1 className="ml-8 text-lg">{namePage}</h1>
       </span>
 
@@ -24,4 +24,5 @@ export default function Header(props) {
 
 Header.propTypes = {
   namePage: PropTypes.string.isRequired,
+  setShowNavBar: PropTypes.func.isRequired,
 };

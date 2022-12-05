@@ -7,7 +7,7 @@ export default function NavBar() {
   const [userLogged] = useState(true);
 
   return (
-    <nav className="bg-black text-white w-[80%] h-[100vh]">
+    <nav className="bg-black text-white w-[120%] h-[100vh]">
       <img src={Logo} alt="logo s1ngle" className="w-[13em] p-2" />
       { userLogged && (
         <main className="flex flex-col justify-evenly items-start h-[10em] m-5 mb-[5em]">

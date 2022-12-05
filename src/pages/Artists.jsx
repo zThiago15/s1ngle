@@ -6,6 +6,7 @@ import NavBar from '../components/home/NavBar';
 
 export default function Artists() {
   const [artists, setArtists] = useState([]);
+  const [showNavBar, setShowNavBar] = useState(false);
 
   useEffect(() => {
     const getArtists = async () => {
@@ -48,10 +49,10 @@ export default function Artists() {
 
   return (
     <div>
-      <span className="hidden">
+      <span className={showNavBar ? 'absolute' : 'hidden'}>
         <NavBar />
       </span>
-      <Header namePage="Artistas" />
+      <Header namePage="Artistas" setShowNavBar={setShowNavBar} />
       <div className="flex flex-wrap">
         {
           artists.map((artist) => {
