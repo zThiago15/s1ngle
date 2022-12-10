@@ -51,9 +51,7 @@ export default function ProfileArtist() {
   return (
     <main className="bg-black h-[100vh]">
       <Header namePage="Perfil" />
-      <span className={showNavBar ? 'absolute' : 'hidden'}>
-        <NavBar />
-      </span>
+      <NavBar />
       <div className="flex items-center text-white m-5 w-[5em]">
         <img src={img} alt="artist" className="rounded-full mr-3" />
         <span>

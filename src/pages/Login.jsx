@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AiFillFacebook } from 'react-icons/ai';
 import authUser from '../services/user';
 
 export default function Login() {
@@ -47,10 +48,19 @@ export default function Login() {
           type="submit"
         >
           Entrar
-
+        </button>
+        <p className="my-3">OU</p>
+        <button
+          className="bg-gray-500 text-white p-3 w-[80%] rounded-full flex items-center justify-center"
+          type="submit"
+        >
+          <AiFillFacebook className="text-xl mr-3" />
+          Entrar com Facebook
         </button>
       </form>
-
+      <footer>
+        <p className="text-gray-400 text-center">By proceeding you also agree to the Terms of Service and Privacy Policy</p>
+      </footer>
     </div>
   );
 }
