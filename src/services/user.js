@@ -2,6 +2,7 @@ import api from '.';
 
 const authUser = async ({ email, password }) => {
   const response = await api.post('/login', { email, password });
+  console.log(response);
 
   return response.data;
 };

@@ -25,7 +25,7 @@ export default function NavBar() {
           <button type="button" onClick={() => disableNavBarAndNavigate('home')}>HOME</button>
           <button type="button" onClick={() => disableNavBarAndNavigate('artists')}>ARTISTAS</button>
           <button type="button" onClick={() => disableNavBarAndNavigate('products')}>PRODUTOS</button>
-          <button type="button" onClick={() => disableNavBarAndNavigate('customize')}>PERSONALIZAR</button>
+          <a href="https://api.whatsapp.com/send?phone=912725484&text=Olá, tudo bem? Gostaria de personalizar minha arte!" target="_blank" rel="noreferrer">PERSONALIZAR</a>
         </main>
       )}
       {

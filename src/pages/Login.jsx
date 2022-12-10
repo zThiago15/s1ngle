@@ -52,7 +52,7 @@ export default function Login() {
         <p className="my-3">OU</p>
         <button
           className="bg-gray-500 text-white p-3 w-[80%] rounded-full flex items-center justify-center"
-          type="submit"
+          type="button"
         >
           <AiFillFacebook className="text-xl mr-3" />
           Entrar com Facebook

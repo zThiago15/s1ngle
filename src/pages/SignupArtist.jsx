@@ -10,6 +10,7 @@ export default function SignupArtist() {
         <input placeholder="Nome completo:*" required />
         <input placeholder="Nome artístico:*" required />
         <input placeholder="Especialidade:*" required />
+        <input placeholder="Estado:*" required />
         <input type="email" placeholder="E-mail:*" required />
         <input type="telephone" placeholder="Whatsapp:*" required />
         <input type="password" placeholder="Senha:*" required />
