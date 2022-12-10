@@ -1,7 +1,14 @@
 import api from '.';
 
 const getProducts = async () => {
-  const response = await api.get('/products');
+  try {
+    const response = await api.get('/products');
 
-  return response.data;
+    return response.data;
+  } catch (err) {
+    console.error(err);
+  }
+  return [];
 };
+
+export default getProducts;
